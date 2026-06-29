@@ -1,0 +1,4 @@
+// Transition Mixin for smooth hover effects
+@mixin transition-smooth {
+  transition: all 0.3s ease-in-out;
+}
