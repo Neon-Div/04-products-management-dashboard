@@ -1,0 +1,18 @@
+// Search & Control Panal
+
+.btn-outline-primary {
+  @include transition-smooth;
+
+  &:hover {
+    background-color: $primary-color;
+    color: #fff;
+  }
+}
+
+// Smooth fade-in for the dynamic Delete All button
+#deletAllBox {
+  button {
+    @include transition-smooth;
+    animation: fadeIn 0.4s ease-in-out;
+  }
+}

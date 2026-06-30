@@ -1,0 +1,23 @@
+// Data Table Display
+.table-responsive {
+  border-radius: 8px;
+  overflow: hidden; // Prevents sharp table corners from leaking out of the card
+}
+
+.table {
+  th {
+    letter-spacing: 0.5px;
+  }
+
+  td {
+    font-weight: 500;
+  }
+}
+
+// Custom styles for small actions buttons inside the table
+.table .btn-sm {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  @include transition-smooth;
+}
