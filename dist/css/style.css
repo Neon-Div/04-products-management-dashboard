@@ -24,13 +24,25 @@ body {
 #total {
   transition: all 0.3s ease-in-out;
   font-size: 1.1rem;
-  min-height: 45px;
+  height: calc(2.25rem + 2px);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #total.bg-success {
   background-color: #198754 !important;
 }
 #total.bg-danger {
   background-color: #dc3545 !important;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.form-control::placeholder {
+  color: #6c757d;
+  opacity: 0.85;
 }
 
 .btn-outline-primary {
