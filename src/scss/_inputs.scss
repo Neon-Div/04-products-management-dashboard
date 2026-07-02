@@ -1,16 +1,18 @@
+@use "shared";
+
 // Product Inputs Panal
 #total {
-  @include transition-smooth;
+  @include shared.transition-smooth;
   font-size: 1.1rem;
   min-height: 45px; // Matches bootstrap input height perfectly
 
   // Green background when caculation is successful via JS
   &.bg-success {
-    background-color: $success-color !important;
+    background-color: shared.$success-color !important;
   }
 
   // Default red background when inputs are empty
   &.bg-danger {
-    background-color: $danger-color !important;
+    background-color: shared.$danger-color !important;
   }
 }

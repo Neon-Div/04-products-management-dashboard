@@ -1,18 +1,19 @@
-// Search & Control Panal
+@use "shared";
 
+// Search & Control Panal
 .btn-outline-primary {
-  @include transition-smooth;
+  @include shared.transition-smooth;
 
   &:hover {
-    background-color: $primary-color;
+    background-color: shared.$primary-color;
     color: #fff;
   }
 }
 
 // Smooth fade-in for the dynamic Delete All button
-#deletAllBox {
+#deleteAllBox {
   button {
-    @include transition-smooth;
+    @include shared.transition-smooth;
     animation: fadeIn 0.4s ease-in-out;
   }
 }

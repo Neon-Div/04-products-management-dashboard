@@ -1,1 +1,66 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  background-color: #f8f9fa !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-control {
+  transition: all 0.3s ease-in-out;
+}
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#total {
+  transition: all 0.3s ease-in-out;
+  font-size: 1.1rem;
+  min-height: 45px;
+}
+#total.bg-success {
+  background-color: #198754 !important;
+}
+#total.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+.btn-outline-primary {
+  transition: all 0.3s ease-in-out;
+}
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+#deleteAllBox button {
+  transition: all 0.3s ease-in-out;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.table-responsive {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th {
+  letter-spacing: 0.5px;
+}
+.table td {
+  font-weight: 500;
+}
+
+.table .btn-sm {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}/*# sourceMappingURL=style.css.map */

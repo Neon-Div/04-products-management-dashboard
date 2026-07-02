@@ -1,21 +1,23 @@
+@use "shared";
+
 // Global Styles & Animations
 body {
-  background-color: $light-bg !important;
+  background-color: shared.$light-bg !important;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 // Global form control focus style
 .form-control {
-  @include transition-smooth;
+  @include shared.transition-smooth;
   &:focus {
-    border-color: $primary-color;
-    box-shadow: 0 0 0 0.25rem rgba($primary-color, 0.25);
+    border-color: shared.$primary-color;
+    box-shadow: 0 0 0 0.25rem rgba(shared.$primary-color, 0.25);
   }
 }
 
 // Fade In Animation for dynamic elements
 @keyframes fadeIn {
-  form {
+  from {
     opacity: 0;
     transform: translateY(-10px);
   }
