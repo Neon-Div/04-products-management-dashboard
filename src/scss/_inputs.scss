@@ -7,11 +7,6 @@
   height: calc(2.25rem + 2px);
   box-sizing: border-box;
 
-  // Flex
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   // Green background when caculation is successful via JS
   &.bg-success {
     background-color: shared.$success-color !important;
@@ -23,14 +18,19 @@
   }
 }
 
-// Placeholders
-.form-control {
-  &:focus {
-    box-shadow: 0 0 0 0.25rem rgba(shared.$primary-color, 0.25);
-  }
+// // Flex
+// display: flex;
+// align-items: center;
+// justify-content: center;
 
-  &::placeholder {
-    color: #6c757d;
-    opacity: 0.85;
-  }
-}
+// // Placeholders
+// .form-control {
+//   &:focus {
+//     box-shadow: 0 0 0 0.25rem rgba(shared.$primary-color, 0.25);
+//   }
+
+//   &::placeholder {
+//     color: #6c757d;
+//     opacity: 0.85;
+//   }
+// }
